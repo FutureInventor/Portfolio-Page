@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.color-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
