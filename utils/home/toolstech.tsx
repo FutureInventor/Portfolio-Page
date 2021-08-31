@@ -1,5 +1,5 @@
 import React from 'react'
-import { VIcon } from '../utils'
+import { VIcon } from '../icon'
 import {
   affinityLogo,
   affinityLogoHover,
@@ -38,7 +38,7 @@ import {
   windowsLogoHover,
   yarnLogo,
   yarnLogoHover
- } from '../assets'
+ } from '../../assets'
 import styles from './toolstech.module.scss'
 
 export function VToolsTech() {

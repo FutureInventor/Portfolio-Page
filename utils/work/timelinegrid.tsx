@@ -3,8 +3,8 @@ import {
   nobleLogo,
   usLogo,
   waskoLogo
-} from '../assets'
-import { getDate } from '../utils'
+} from '../../assets'
+import { getDate } from '../date'
 import styles from './timelinegrid.module.scss'
 
 export function VTimelineGrid() {

@@ -1,1 +1,1 @@
-export { VHome } from './home'
+export { default } from './home'

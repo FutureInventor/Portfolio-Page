@@ -1,11 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
 import { Fade } from 'react-awesome-reveal'
-import { VTimelineGrid } from './timelinegrid'
 import {
   VFooter,
-  VMenuBar
-} from '../utils'
+  VMenuBar,
+  VTimelineGrid
+} from '../../utils'
 import styles from './work.module.scss'
 
 export default function VWork() {

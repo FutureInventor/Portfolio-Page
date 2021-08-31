@@ -4,8 +4,9 @@ import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import {
   VMenuBar,
+  VPhotoGrid,
   VFooter
-} from '../utils'
+} from '../../utils'
 import {
   belayTheCppLogo,
   bonoboPressLogo,
@@ -19,9 +20,8 @@ import {
   posterCommission,
   schemeCommission,
   sitePointLogo,
-} from '../assets'
+} from '../../assets'
 import styles from './about.module.scss'
-import { VPhotoGrid } from './photogrid'
 
 export default function VAbout() {
   return (

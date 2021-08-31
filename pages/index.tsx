@@ -1,4 +1,4 @@
-import { VHome } from "./home"
+import VHome from "./home"
 
 export default function Home() {
   return (

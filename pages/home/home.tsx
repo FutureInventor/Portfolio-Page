@@ -5,17 +5,17 @@ import React from 'react'
 import { Fade } from "react-awesome-reveal"
 import {
   VFooter,
-  VMenuBar
-} from '../utils'
-import { VMainHeader } from './mainheader'
-import { VToolsTech } from './toolstech'
+  VMainHeader,
+  VMenuBar,
+  VToolsTech
+} from '../../utils'
 import {
   chevronDown,
   profilePicture
-} from '../assets'
+} from '../../assets'
 import styles from './home.module.scss'
 
-export function VHome() {
+export default function VHome() {
   return (
     <div className={styles.homeContainer}>
       <Head>

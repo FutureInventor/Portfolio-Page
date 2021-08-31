@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { useTypedText } from '../utils'
+import { useTypedText } from '..'
 import {
   barcelonaSagradaPhoto,
   bowlingPhoto,
@@ -24,7 +24,7 @@ import {
   sushiPhoto,
   swissMurrenPhoto,
   walesPhoto
-} from '../assets'
+} from '../../assets'
 import styles from './photogrid.module.scss'
 
 export function VPhotoGrid() {
