@@ -1,0 +1,55 @@
+.menuBar {
+  background-color: #181818;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+  height: 60px;
+  max-width: 100%;
+  padding: 20px 40px;
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-right: auto;
+    text-decoration: none;
+
+    &:visited{
+      color: black;
+    }
+  }
+
+  .squareInitials {
+    align-self: center;
+    background-color: #E76161;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+    height: 40px;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 40px;
+    width: 40px;
+    text-align: center;
+  }
+
+  .name {
+    color: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .tab {
+    text-decoration: none;
+  }
+}
+
+
+
+
+

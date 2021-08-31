@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 510 510" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <g id="post-linkedin">
+            <path d="M459,0L51,0C22.95,0 0,22.95 0,51L0,459C0,487.05 22.95,510 51,510L459,510C487.05,510 510,487.05 510,459L510,51C510,22.95 487.05,0 459,0ZM153,433.5L76.5,433.5L76.5,204L153,204L153,433.5ZM114.75,160.65C89.25,160.65 68.85,140.25 68.85,114.75C68.85,89.25 89.25,68.85 114.75,68.85C140.25,68.85 160.65,89.25 160.65,114.75C160.65,140.25 140.25,160.65 114.75,160.65ZM433.5,433.5L357,433.5L357,298.35C357,277.951 339.15,260.1 318.75,260.1C298.35,260.1 280.5,277.951 280.5,298.35L280.5,433.5L204,433.5L204,204L280.5,204L280.5,234.6C293.25,214.2 321.3,198.9 344.25,198.9C392.7,198.9 433.5,239.7 433.5,288.15L433.5,433.5Z" style="fill:rgb(231,97,97);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

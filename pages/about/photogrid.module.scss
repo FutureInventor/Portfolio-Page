@@ -1,0 +1,172 @@
+.photoGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    'barca barca barca climb climb climb'
+    'bridge bridge bridge climb climb climb'
+    'eiffel eiffel eiffel climb climb climb'
+    'murren murren murren murren murren murren'
+    'church church church alps alps alps'
+    'church church church wales wales wales'
+    'chelsea chelsea chelsea chelsea chelsea chelsea'
+    'arsenal arsenal arsenal arsenal arsenal arsenal'
+    'manchester manchester manchester manchester bowling bowling'
+    'cross cross cross waterfall waterfall waterfall'
+    'cross cross cross boots boots boots'
+    'sushi sushi sushi monument monument monument'
+    'lake lake lake monument monument monument'
+    'skyscrapper skyscrapper skyscrapper skyscrapper skyscrapper skyscrapper'
+    'car car car ski ski ski'
+    'car car car game game game';
+
+  %photoItem {
+    filter: grayscale(1);
+    position: relative;
+
+    &:hover {
+      animation: colorUp 0.7s linear;
+      filter: grayscale(0);
+
+      .photoInfo {
+        display: flex;
+      }
+    }
+
+    @keyframes colorUp {
+      0% {filter: grayscale(1);}
+      100% {filter: grayscale(0)}
+    }
+  }
+
+  .photoInfo {
+    animation: fadeIn 0.7s linear;
+    background-color: black;
+    display: none;
+    left: 0;
+    margin: 20px;
+    min-width: 30px;
+    padding: 10px;
+    position: absolute;
+    top:0;
+    z-index: 3;
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1}
+    }
+  }
+
+  .barca {
+    @extend %photoItem;
+    grid-area: barca;
+    height: 25vw;
+  }
+  .climb {
+    @extend %photoItem;
+    grid-area: climb;
+  }
+  .bridge {
+    @extend %photoItem;
+    grid-area: bridge;
+    height: 25vw;
+  }
+  .eiffel {
+    @extend %photoItem;
+    grid-area: eiffel;
+    height: 25vw;
+  }
+  .murren {
+    @extend %photoItem;
+    grid-area: murren;
+    height: 30vw;
+  }
+  .church {
+    @extend %photoItem;
+    grid-area: church;
+  }
+  .alps {
+    @extend %photoItem;
+    grid-area: alps;
+    height: 25vw;
+  }
+  .wales {
+    @extend %photoItem;
+    grid-area: wales;
+    height: 25vw;
+  }
+  .chelsea {
+    @extend %photoItem;
+    grid-area: chelsea;
+    height: 30vw;
+  }
+  .arsenal {
+    @extend %photoItem;
+    grid-area: arsenal;
+    height: 30vw;
+  }
+  .manchester {
+    @extend %photoItem;
+    grid-area: manchester;
+    height: 30vw;
+  }
+  .bowling {
+    @extend %photoItem;
+    grid-area: bowling;
+    height: 30vw;
+  }
+  .cross {
+    @extend %photoItem;
+    grid-area: cross;
+  }
+  .waterfall {
+    @extend %photoItem;
+    grid-area: waterfall;
+    height: 25vw;
+  }
+  .boots {
+    @extend %photoItem;
+    grid-area: boots;
+    height: 25vw;
+  }
+  .sushi {
+    @extend %photoItem;
+    grid-area: sushi;
+    height: 25vw;
+  }
+  .monument {
+    @extend %photoItem;
+    grid-area: monument;
+  }
+  .lake {
+    @extend %photoItem;
+    grid-area: lake;
+    height: 25vw;
+  }
+  .skyscrapper {
+    @extend %photoItem;
+    grid-area: skyscrapper;
+    height: 30vw;
+  }
+  .car {
+    @extend %photoItem;
+    grid-area: car;
+  }
+  .ski {
+    @extend %photoItem;
+    grid-area: ski;
+    height: 25vw;
+  }
+  .game {
+    @extend %photoItem;
+    grid-area: game;
+    height: 25vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .photoInfo {
+    margin: 5px !important;
+    font-size: 7px;
+  }
+}
+

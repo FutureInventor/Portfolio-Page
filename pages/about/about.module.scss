@@ -1,0 +1,105 @@
+.aboutContainer {
+  display: flex;
+  background-color: #1A1A1A;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 80px 0;
+
+    .summary {
+      color: #D5D5D5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1500px;
+      text-align: left;
+      width: 70vw;
+    }
+
+    .hobbies {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      max-width: 1500px;
+      width: 70vw;
+
+      .newsletters {
+        align-items: center;
+        background-color: #202020;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-height: 780px;
+        min-width: 350px;
+        padding: 20px 40px;
+        text-align: left;
+      }
+
+      .commissions {
+        justify-content:center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px;
+        overflow: hidden;
+        height: 820px;
+
+        .scrollGallery {
+          height: 500px;
+          overflow: auto;
+          position: relative;
+          white-space: nowrap;
+
+          .hint {
+            animation: pulse linear 3s infinite;
+            color: #D5D5D5;
+            bottom: auto;
+            left: auto;
+            padding: 10px;
+            position: absolute;
+            z-index: 5;
+          }
+
+          @keyframes pulse {
+            0% {opacity: 0;}
+            50% {opacity: 1;}
+            100% {opacity: 0;}
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .photoGallery {
+      max-width: 1500px;
+      width: 70vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hobbies {
+    gap: 50px;
+    flex-direction: column !important;
+
+    .newsletters {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px 0 !important;
+    }
+
+    .commissions {
+      width: 70vw;
+    }
+  }
+}

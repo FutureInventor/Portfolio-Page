@@ -1,0 +1,122 @@
+.workContainer {
+  display: flex;
+  background-color: #1A1A1A;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 0;
+
+    .summary {
+      color: #a35151;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 70vw;
+    }
+
+    .timelineGrid {
+      background-color: #D5D5D5;
+      display: grid;
+      column-gap: 7px;
+      grid-template-columns: auto auto;
+      min-height: 1500px;
+
+      &Item {
+        align-items: center;
+        background-color:#1A1A1A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 60px;
+        padding: 20px 40px;
+
+        &Wide {
+          @extend .timelineGridItem;
+          grid-column-end: 3;
+          grid-column-start: 1;
+          text-align: center;
+        }
+
+        &AdjoiningCard {
+          @extend .timelineGridItem;
+        }
+
+        .timelinePoint {
+          background-color: #D5D5D5;
+          border-radius: 15px;
+          height: 30px;
+          margin: 20px;
+          width: 30px;
+        }
+
+        &Card {
+          @extend .timelineGridItem;
+        }
+
+        .cardContent {
+          background-color: #202020;
+          border-radius: 30px;
+          border: 5px solid #D5D5D5;
+          min-height: 250px;
+          transition: transform .2s;
+          padding: 15px;
+          width: 400px;
+
+          &:hover {
+            transform: scale(1.7);
+          }
+
+          &Header {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .company {
+            &Info {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 5px;
+              height: 90px;
+            }
+
+            &Title {
+              font-size: 20px;
+              margin: 0;
+            }
+
+            &Logo {
+              align-items: center;
+              background-color: white;
+              border-radius: 35px;
+              display: flex;
+              height: 70px;
+              justify-content: center;
+              margin: 10px;
+              overflow: hidden;
+              width: 70px;
+            }
+          }
+
+          &Details {
+            font-size: 15px;
+            margin: 0;
+          }
+
+          &Description {
+            color: #D5D5D5;
+            font-size: 13px;
+            margin: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+}

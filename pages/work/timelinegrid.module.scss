@@ -1,0 +1,127 @@
+.timelineGrid {
+  background-color: #D5D5D5;
+  display: grid;
+  column-gap: 7px;
+  grid-template-columns: auto auto;
+  min-height: 1500px;
+
+  &Item {
+    align-items: center;
+    background-color:#1A1A1A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60px;
+    padding: 20px 40px;
+
+    &Wide {
+      @extend .timelineGridItem;
+      grid-column-end: 3;
+      grid-column-start: 1;
+      text-align: center;
+    }
+
+    &AdjoiningCard {
+      @extend .timelineGridItem;
+      max-width: 440px;
+    }
+
+    .timelinePoint {
+      background-color: #D5D5D5;
+      border-radius: 15px;
+      height: 30px;
+      margin: 10px 0;
+      width: 30px;
+    }
+
+    .hoverTip {
+      animation: pulse linear 3s infinite;
+    }
+
+    @keyframes pulse {
+      0% {opacity: 0;}
+      50% {opacity: 1;}
+      100% {opacity: 0;}
+    }
+
+    &Card {
+      @extend .timelineGridItem;
+    }
+
+    .cardContent {
+      background-color: #202020;
+      border-radius: 30px;
+      border: 5px solid #D5D5D5;
+      min-height: 250px;
+      transition: transform .2s;
+      padding: 15px;
+      width: 400px;
+
+      &:hover {
+        transform: scale(1.7);
+      }
+
+      &Header {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .company {
+        &Info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          height: 90px;
+        }
+
+        &Title {
+          font-size: 20px;
+          margin: 0;
+        }
+
+        &Logo {
+          align-items: center;
+          background-color: white;
+          border-radius: 35px;
+          display: flex;
+          height: 70px;
+          justify-content: center;
+          margin: 10px;
+          overflow: hidden;
+          width: 70px;
+        }
+      }
+
+      &Details {
+        font-size: 15px;
+        margin: 0;
+      }
+
+      &Description {
+        color: #D5D5D5;
+        font-size: 13px;
+        margin: 10px 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .timelineGridItemAdjoiningCard {
+    display: none !important;
+  }
+
+  .timelineGridItem {
+    min-height: 20px;
+  }
+
+  .timelineGridItemCard {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  .cardContent:hover {
+    transform: none !important;
+  }
+}

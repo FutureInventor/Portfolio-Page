@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 510 510" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <g id="gmail">
+            <path d="M459,51L51,51C22.95,51 0,73.95 0,102L0,408C0,436.05 22.95,459 51,459L459,459C487.05,459 510,436.05 510,408L510,102C510,73.95 487.05,51 459,51ZM459,408L408,408L408,183.6L255,280.5L102,183.6L102,408L51,408L51,102L81.6,102L255,209.1L428.4,102L459,102L459,408Z" style="fill:rgb(231,97,97);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

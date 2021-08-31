@@ -1,0 +1,29 @@
+.iconContainer {
+  position: relative;
+
+  .icon {
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    &Active {
+      @extend .icon;
+      opacity: 0%;
+      z-index: 9;
+
+      &:hover {
+        animation: fadeIn 0.5s;
+        opacity: 100%;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0%;
+        }
+        100% {
+          opacity: 100%;
+        }
+      }
+    }
+  }
+}
