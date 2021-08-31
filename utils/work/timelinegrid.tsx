@@ -77,8 +77,13 @@ export function VTimelineGrid() {
             Search and sort by name function were applied.
             App had system of accounts as well. Admins, technical and user ones.
             Admins could manage accounts by editing them, deleting and authorize
-            (every new user had to be authorized by admin). They could also
+            (every new user had to be authorized by admin). Admins could also
             see what user is logged at the moment.<br/>
+            <br/>
+            Main responsibilities:<br/>
+            - designing both frontend and backend side of the app,<br/>
+            - creating an asynchronous communication between client and server via <b>REST API</b>,<br/>
+            - setting up server with database.<br/>
             <br/>
             Languages: JavaScript, <b>React</b>, <b>PHP</b>.<br/>
             Database: <b>MySQL</b>.<br/>

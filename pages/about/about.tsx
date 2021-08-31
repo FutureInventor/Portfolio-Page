@@ -47,7 +47,7 @@ export default function VAbout() {
               drawing and making animations give me a lot of fun as well.
               I try to lead an active lifestyle. Whenever I have some spare time,
               I try to dedicate it to learning new languages, spending my time
-              with friends and family, and traveling. I'm a huge fan of the sport,
+              with friends and family, and traveling. I'm a huge sports fan,
               as well, especially football. Besides that I love hiking and rock
               climbing. I feel extremely good in the mountains. In winter
               I ski. To relax I usually play video games or watch movies/tv series.

@@ -17,6 +17,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      min-width: 300px;
       max-width: 1500px;
       text-align: left;
       width: 70vw;
@@ -47,11 +48,12 @@
         display: flex;
         flex-direction: column;
         margin: 0 30px;
+        min-width: 300px;
         overflow: hidden;
-        height: 820px;
+        min-height: 820px;
 
         .scrollGallery {
-          height: 500px;
+          min-height: 500px;
           overflow: auto;
           position: relative;
           white-space: nowrap;
@@ -81,6 +83,7 @@
 
     .photoGallery {
       max-width: 1500px;
+      min-width: 300px;
       width: 70vw;
     }
   }

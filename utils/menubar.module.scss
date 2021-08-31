@@ -49,6 +49,23 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .menuBar {
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+  }
+
+  .title {
+    margin: auto;
+  }
+
+  .name {
+    display: none !important;
+  }
+}
+
 
 
 

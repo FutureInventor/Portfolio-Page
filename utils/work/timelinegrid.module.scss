@@ -121,7 +121,15 @@
     grid-column-start: 1;
   }
 
-  .cardContent:hover {
-    transform: none !important;
+  .cardContent {
+    width: auto !important;
+
+    &:hover {
+      transform: none !important;
+    }
+  }
+
+  .hoverTip {
+    display: none;
   }
 }

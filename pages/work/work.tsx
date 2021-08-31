@@ -38,7 +38,9 @@ export default function VWork() {
           </Fade>
         </div>
         <Fade>
-          <VTimelineGrid/>
+          <div className={styles.timelineGridCotainer}>
+            <VTimelineGrid/>
+          </div>
         </Fade>
       </div>
       <VFooter/>
