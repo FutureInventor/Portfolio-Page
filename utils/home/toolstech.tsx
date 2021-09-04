@@ -30,6 +30,7 @@ import {
   reactLogo,
   reactLogoHover,
   sassLogo,
+  sassLogoHover,
   tsLogo,
   tsLogoHover,
   vsLogo,
@@ -38,7 +39,7 @@ import {
   windowsLogoHover,
   yarnLogo,
   yarnLogoHover
- } from '../../assets'
+} from '../../assets'
 import styles from './toolstech.module.scss'
 
 export function VToolsTech() {
@@ -89,7 +90,7 @@ export function VToolsTech() {
           tooltipID="ts-tooltip" />
         <VIcon
           defaulIcon={sassLogo}
-          onHoverIcon={cssLogoHover}
+          onHoverIcon={sassLogoHover}
           height="60px"
           width="60px"
           name="Sass"
