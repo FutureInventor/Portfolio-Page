@@ -39,7 +39,7 @@ import {
   windowsLogoHover,
   yarnLogo,
   yarnLogoHover
- } from '../../assets'
+} from '../../assets'
 import styles from './toolstech.module.scss'
 
 export function VToolsTech() {
