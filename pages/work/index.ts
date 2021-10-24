@@ -1,1 +1,1 @@
-export { default } from './work'
+export { default } from './work';

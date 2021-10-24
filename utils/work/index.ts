@@ -1,1 +1,1 @@
-export { VTimelineGrid } from './timelinegrid'
+export { VTimelineGrid } from './timelinegrid';
