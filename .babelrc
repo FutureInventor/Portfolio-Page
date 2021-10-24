@@ -1,0 +1,20 @@
+{
+    "presets": [
+        "next/babel"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "./"
+                ],
+                "alias": {
+                    "@containers": "./src/containers/",
+                    "@styles": "./styles/",
+                    "@shared": "./src/shared/"
+                }
+            }
+        ]
+    ]
+}
