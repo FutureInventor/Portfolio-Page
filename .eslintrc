@@ -33,6 +33,7 @@
   ],
   "rules": {
     "react/no-unescaped-entities": 0,
+    "react/display-name": 0,
     "prefer-const": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-explicit-any": "error",
