@@ -24,7 +24,7 @@ import {
 	sushiPhoto,
 	swissMurrenPhoto,
 	walesPhoto,
-} from '../../assets';
+} from '@shared/assets/index';
 import styles from './photogrid.module.scss';
 
 export function VPhotoGrid() {

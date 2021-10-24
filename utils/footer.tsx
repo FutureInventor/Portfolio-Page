@@ -6,7 +6,7 @@ import {
 	linkedInLogoHover,
 	gitHubLogo,
 	gitHubLogoHover,
-} from '../assets';
+} from '@shared/assets/index';
 import styles from './footer.module.scss';
 
 export function VFooter() {

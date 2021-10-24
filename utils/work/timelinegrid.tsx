@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { nobleLogo, usLogo, waskoLogo } from '../../assets';
+import { nobleLogo, usLogo, waskoLogo } from '@shared/assets/index';
 import { getDate } from '../date';
 import styles from './timelinegrid.module.scss';
 

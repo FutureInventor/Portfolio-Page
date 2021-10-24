@@ -16,7 +16,7 @@ import {
 	posterCommission,
 	schemeCommission,
 	sitePointLogo,
-} from '../../assets';
+} from '@shared/assets/index';
 import styles from './about.module.scss';
 
 export default function VAbout() {
