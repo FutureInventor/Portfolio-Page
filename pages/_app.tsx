@@ -1,7 +1,11 @@
 import '../styles/globals.scss';
-import type { AppProps } from 'next/app';
+import type { ReactElement } from 'react';
+import { AppProps } from '@shared/types';
 
-function MyApp({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
+	const getLayout = Component.getLayout || ((page: ReactElement) => page);
+
+	return getLayout(<Component {...pageProps} />);
+};
+
 export default MyApp;
