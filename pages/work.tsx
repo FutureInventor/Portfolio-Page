@@ -1,23 +1,14 @@
-import React from 'react';
-import Head from 'next/head';
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import Layout from '@layout/index';
 import { Fade } from 'react-awesome-reveal';
-import { VFooter, VMenuBar, VTimelineGrid } from '../../utils';
-import styles from './work.module.scss';
+import VTimelineGrid from '@components/TimelineGrid';
+import styles from '@styles/pages/work.module.scss';
+import type { ReactElement } from 'react';
+import type { NextPage } from 'next';
 
-export default function VWork() {
+const VWork: NextPage = () => {
 	return (
 		<div className={styles.workContainer}>
-			<Head>
-				<title>Work history</title>
-				<meta name="description" content="Karolina Hudziec Portfolio Page" />
-				<meta name="author" content="Karolina Hudziec" />
-				<meta
-					name="keywords"
-					content="Karolina, Hudziec, Portfolio, Frontend"
-				/>
-				<link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon" />
-			</Head>
-			<VMenuBar activeTab="Work" />
 			<div className={styles.content}>
 				<div className={styles.summary}>
 					<Fade>
@@ -42,7 +33,10 @@ export default function VWork() {
 					</div>
 				</Fade>
 			</div>
-			<VFooter />
 		</div>
 	);
-}
+};
+
+// @ts-ignore
+VWork.getLayout = (page: ReactElement) => <Layout>{page}</Layout>;
+export default VWork;

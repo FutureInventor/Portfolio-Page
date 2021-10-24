@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
-import { useTypedText } from '..';
+import useTypedText from '@hooks/useTypedText';
 import {
 	barcelonaSagradaPhoto,
 	bowlingPhoto,
@@ -25,9 +24,9 @@ import {
 	swissMurrenPhoto,
 	walesPhoto,
 } from '@shared/assets/index';
-import styles from './photogrid.module.scss';
+import styles from './styles.module.scss';
 
-export function VPhotoGrid() {
+const VPhotoGrid = () => {
 	return (
 		<div className={styles.photoGrid}>
 			<div className={styles.barca}>
@@ -276,6 +275,5 @@ export function VPhotoGrid() {
 			</div>
 		</div>
 	);
-}
-
-//TO-DO refactoring of VPhotoGrid
+};
+export default VPhotoGrid;

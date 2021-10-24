@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import Image from 'next/image';
 import Head from 'next/head';
-import React from 'react';
+import type { ReactElement } from 'react';
+import type { NextPage } from 'next';
 import { Fade } from 'react-awesome-reveal';
-import { VMenuBar, VPhotoGrid, VFooter } from '../../utils';
 import {
 	belayTheCppLogo,
 	bonoboPressLogo,
@@ -17,9 +18,11 @@ import {
 	schemeCommission,
 	sitePointLogo,
 } from '@shared/assets/index';
-import styles from './about.module.scss';
+import styles from '@styles/pages/about.module.scss';
+import Layout from '@layout/index';
+import VPhotoGrid from '@components/PhotoGrid';
 
-export default function VAbout() {
+const VAbout: NextPage = () => {
 	return (
 		<div className={styles.aboutContainer}>
 			<Head>
@@ -32,7 +35,6 @@ export default function VAbout() {
 				/>
 				<link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon" />
 			</Head>
-			<VMenuBar activeTab="About" />
 			<div className={styles.content}>
 				<div className={styles.summary}>
 					<Fade>
@@ -136,7 +138,10 @@ export default function VAbout() {
 					</div>
 				</Fade>
 			</div>
-			<VFooter />
 		</div>
 	);
-}
+};
+
+// @ts-ignore
+VAbout.getLayout = (page: ReactElement) => <Layout>{page}</Layout>;
+export default VAbout;

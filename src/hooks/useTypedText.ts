@@ -1,13 +1,17 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
-export function useTypedText(text: string, speed: number, delayTime?: number) {
-	const [textState, setTextState] = React.useState('');
+const useTypedText = (
+	text: string,
+	speed: number,
+	delayTime?: number
+): string => {
+	const [textState, setTextState] = useState('');
 	const chars = text.split('');
 	let interval = speed;
 
 	if (textState.length === 0 && delayTime) interval = speed + delayTime;
 
-	React.useEffect(() => {
+	useEffect(() => {
 		const timer = setTimeout(() => {
 			setTextState((prevText) => {
 				if (prevText.length !== chars.length) {
@@ -21,4 +25,6 @@ export function useTypedText(text: string, speed: number, delayTime?: number) {
 	});
 
 	return textState;
-}
+};
+
+export default useTypedText;

@@ -1,4 +1,4 @@
-export function getDate() {
+export const getDate = () => {
 	const date = new Date();
 	const year = String(date.getFullYear());
 	let month = String(date.getMonth() + 1);
@@ -9,4 +9,4 @@ export function getDate() {
 	if (month.length === 1) month = '0' + month;
 
 	return `${day}.${month}.${year}`;
-}
+};
