@@ -1,0 +1,15 @@
+.next
+dist
+node_modules/
+.vscode
+.github
+.git
+next-env.d.ts
+lint-staged.config.js
+next.config.js
+.gitignore
+.prettierrc
+package.json
+yarn.lock
+package-lock.json
+README.md
