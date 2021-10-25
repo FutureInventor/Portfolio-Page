@@ -5,8 +5,9 @@ import {
 	posterCommission,
 	schemeCommission,
 } from '@shared/assets/index';
+import { utilsTypes } from '@shared/interfaces';
 
-export const graphicPhotos = [
+export const graphicPhotos: utilsTypes[] = [
 	{
 		id: 1,
 		imageAlt: 'Camera logo commission',

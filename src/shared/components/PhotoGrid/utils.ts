@@ -23,7 +23,16 @@ import {
 	sushiPhoto,
 } from '@shared/assets/index';
 
-export const photos = [
+interface Types {
+	id: number;
+	styleName: string;
+	date: string;
+	caption: string;
+	imageSrc: StaticImageData;
+	imageAlt: string;
+}
+
+export const photos: Types[] = [
 	{
 		id: 1,
 		styleName: 'barca',

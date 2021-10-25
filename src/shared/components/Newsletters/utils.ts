@@ -7,8 +7,9 @@ import {
 	hashnodeLogo,
 	sitePointLogo,
 } from '@shared/assets/index';
+import { utilsTypes } from '@shared/interfaces';
 
-export const sites = [
+export const sites: utilsTypes[] = [
 	{
 		id: 1,
 		link: 'https://css-tricks.com/',
