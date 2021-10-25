@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --config .prettierrc '**/*.(ts|tsx|js)' --write"
   },
   "dependencies": {
     "next": "11.0.0",
@@ -18,9 +19,17 @@
     "sass": "^1.37.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
     "@types/react": "17.0.11",
-    "eslint": "7.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "eslint": "^7.32.0",
     "eslint-config-next": "11.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.4",
+    "prettier": "^2.4.1",
     "typescript": "4.3.2",
     "typescript-plugin-css-modules": "^3.4.0"
   }

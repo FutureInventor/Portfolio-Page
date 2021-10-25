@@ -1,1 +1,0 @@
-export { VPhotoGrid } from './photogrid'

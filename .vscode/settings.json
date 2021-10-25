@@ -1,0 +1,16 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "eslint.packageManager": "yarn",
+    "npm.packageManager": "yarn",
+    "prettier.eslintIntegration": true,
+    "prettier.tslintIntegration": true,
+    "tslint.autoFixOnSave": true,
+    "tslint.packageManager": "yarn",
+}
