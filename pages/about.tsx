@@ -12,7 +12,6 @@ import Head from '@shared/components/Head';
 const About: NextPage = () => (
 	<main className={styles.aboutContainer}>
 		<Head title="About me" />
-		{/* // !@ TODO: Fix something here I don't know what's wrong but something is not working properly  */}
 		<div className={styles.content}>
 			<section className={styles.summary}>
 				<Fade>
@@ -68,6 +67,7 @@ const About: NextPage = () => (
 						<br />
 						Hover on photo in order to get more details.
 					</h2>
+					{/* // !@ issue here */}
 					<VPhotoGrid />
 				</section>
 			</Fade>
