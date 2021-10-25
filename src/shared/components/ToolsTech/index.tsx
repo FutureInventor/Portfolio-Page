@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import styles from './toolstech.module.scss';
+import styles from './styles.module.scss';
 import VIcon from '@components/Icon';
 import { toolsTechItems } from './utils';
 

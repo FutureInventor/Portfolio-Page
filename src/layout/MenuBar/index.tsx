@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './menubar.module.scss';
+import styles from './styles.module.scss';
 import type { ReactElement } from 'react';
 import { menuBarItems } from './utils';
 import { useRouter } from 'next/router';

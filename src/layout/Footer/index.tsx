@@ -1,5 +1,5 @@
 import VIcon from '@components/Icon';
-import styles from './footer.module.scss';
+import styles from './styles.module.scss';
 import type { ReactElement } from 'react';
 import { footerLinks } from './utils';
 
