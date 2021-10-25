@@ -7,7 +7,7 @@ import { COLORS } from '@shared/utils/constants/colors';
 
 const VMenuBar = (): ReactElement => {
 	const { pathname } = useRouter();
-	console.log(pathname);
+
 	return (
 		<nav className={styles.menuBar}>
 			<Link href="/">
