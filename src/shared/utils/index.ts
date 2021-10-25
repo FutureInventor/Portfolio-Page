@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useTypedText = (
+export const TypingEffect = (
 	text: string,
 	speed: number,
 	delayTime?: number
@@ -26,5 +26,3 @@ const useTypedText = (
 
 	return textState;
 };
-
-export default useTypedText;
