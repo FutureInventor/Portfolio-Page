@@ -2,7 +2,8 @@ import Image from 'next/image'
 import {
   nobleLogo,
   usLogo,
-  waskoLogo
+  waskoLogo,
+  tellyoLogo
 } from '../../assets'
 import { getDate } from '../date'
 import styles from './timelinegrid.module.scss'
@@ -108,7 +109,7 @@ export function VTimelineGrid() {
             <div className={styles.companyInfo}>
               <h1 className={styles.companyTitle}>Noble Systems</h1>
               <h2 className={styles.cardContentDetails}>Kraków</h2>
-              <h2 className={styles.cardContentDetails}>10.2020 - 09.2020</h2>
+              <h2 className={styles.cardContentDetails}>10.2020 - 09.2021</h2>
             </div>
           </div>
           <p className={styles.cardContentDescription}>
@@ -148,6 +149,49 @@ export function VTimelineGrid() {
         </div>
       </div>
       <div className={styles.timelineGridItemAdjoiningCard}/>
+      <div className={styles.timelineGridItemAdjoiningCard}/>
+      <div className={styles.timelineGridItem}/>
+      <div className={styles.timelineGridItem}/>
+      <div className={styles.timelineGridItemCard}>
+        <div className={styles.cardContent}>
+          <div className={styles.cardContentHeader}>
+            <div className={styles.companyLogo}>
+              <Image
+                alt="Tellyo company logo."
+                src={tellyoLogo}
+                height={50}
+                width={50}/>
+            </div>
+            <div className={styles.companyInfo}>
+              <h1 className={styles.companyTitle}>Tellyo OY</h1>
+              <h2 className={styles.cardContentDetails}>Łódź</h2>
+              <h2 className={styles.cardContentDetails}>09.2021 - now</h2>
+            </div>
+          </div>
+          <p className={styles.cardContentDescription}>
+          Building an advanced hybrid cloud web application, based on AngularJS,
+          React, Jitsi library, and OBS Studio software.<br/>
+            <br/>
+            Main responsibilities:<br/>
+            - working collaboratively both with frontend and backend teams,<br/>
+            - writing a clean and high-quality codebase,<br/>
+            - creating new features in the monthly releases,<br/>
+            - code review of other developers in our teams,<br/>
+            - fixing new and old bugs requested by QA team,<br/>
+            - taking active participation in the planning of creating new features.<br/>
+            <br/>
+            Main achievement:<br/>
+            - carrying out migration of our app from JavaScript to TypeSctipt (the whole app) and from AngularJS to React 18.<br/>
+            <br/>
+            Languages: TypeScript.<br/>
+            Frameworks: <b>React</b>, AngularJS.<br/>
+            State Management: <b>Redux Thunk</b>.<br/>
+            Styling: SCSS, <b>StoryBook</b>.<br/>
+            Version Control System: GitHub/GitLab (git).<br/>
+            Issue trancing: Jira.
+          </p>
+        </div>
+      </div>
       <div className={styles.timelineGridItem}/>
       <div className={styles.timelineGridItem}/>
       <div className={styles.timelineGridItemWide}>
